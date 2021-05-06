@@ -9,9 +9,10 @@ jobs:
       - run:
           command: |
             sudo pip install -U pip
-            sudo pip install pytest coverage
+            sudo pip install pytest coverage coveralls
             coverage run --source=pyconfiger -m pytest
             coverage html
+            coveralls
       - store_artifacts:
           path: htmlcov
   deploy:

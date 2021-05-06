@@ -2,7 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/pyconfiger.svg)](https://badge.fury.io/py/pyconfiger)
 
-[![coverage](./coverage-badge.svg)](./coverage-badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/Randomneo/pyconfiger/badge.svg?branch=master)](https://coveralls.io/github/Randomneo/pyconfiger?branch=master)
 
 
 # Description

@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='pyconfiger',
-    version='0.1.0',
+    version='0.1.1',
     packages=['pyconfiger'],
     author='Rostyslav Misiura',
     author_email='rostislav9999@gmail.com',

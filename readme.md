@@ -59,4 +59,4 @@ Also building keys wont add them to required so in case of missing value `Config
 
 # Future
 
-    This lib created for self use. If you found some cool way to extend this please create issue or PR it would be very appreciated.
+This lib created for self use. If you found some cool way to extend this please create issue or PR it would be very appreciated.

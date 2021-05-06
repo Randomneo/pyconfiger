@@ -1,4 +1,5 @@
-[![pyconfiger](https://circleci.com/gh/Randomneo/pyconfiger.svg?style=svg)](https://circleci.com/gh/Randomneo/pyconfiger)
+CircleCI: [![pyconfiger](https://circleci.com/gh/Randomneo/pyconfiger.svg?style=svg)](https://circleci.com/gh/Randomneo/pyconfiger)
+
 
 # Description
 

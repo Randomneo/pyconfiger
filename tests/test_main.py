@@ -13,5 +13,4 @@ def test_configer(monkeypatch):
 
 def test_configer_context():
     from pyconfiger import configer
-    assert False
     assert configer.get('TEST_ENV') == 'TEST_ENV_VALUE'

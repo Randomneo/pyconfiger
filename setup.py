@@ -12,7 +12,7 @@ setup(
     description='A simple python module to handle your project settings',
     long_description=open('readme.md').read(),
     long_description_content_type='text/markdown',
-    license=u"GNU Affero General Public License, version 3",
+    license=u'GNU Affero General Public License, version 3',
     install_requires=[],
     classifiers=[
         'Intended Audience :: Developers',

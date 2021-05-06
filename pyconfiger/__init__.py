@@ -28,27 +28,10 @@ def key_builder(use):
     return decorate
 
 
-@key_builder(use=(
-    'POSTGRES_USER',
-    'POSTGRES_DB',
-    'POSTGRES_PORT',
-    'POSTGRES_PASSWORD',
-))
-def sqlalchemy_database_url(user, db_name, port, password):
-    return f'postgresql://{user}:{password}@db:{port}/{db_name}'
-
-
 class Configer:
-    required_keys = (
-        'POSTGRES_USER',
-        'POSTGRES_DB',
-        'POSTGRES_PORT',
-        'POSTGRES_PASSWORD',
-    )
+    required_keys = ()
 
-    built_keys = OrderedDict({
-        'SQLALCHEMY_DATABASE_URL': sqlalchemy_database_url,
-    })
+    built_keys = OrderedDict()
 
     def __init__(self):
         self.keys = KEYS_NOT_DEFINED

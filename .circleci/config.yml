@@ -9,9 +9,7 @@ jobs:
       - run:
           command: |
             sudo pip install -U pip
-      - run:
-          command: |
-            sudo pip install pytest covegare coverage-badge
+            sudo pip install pytest coverage coverage-badge
             coverage run --source=pyconfiger -m pytest
             coverage html
             coverage-bage -o coverage-bage.svg

@@ -34,6 +34,4 @@ workflows:
       - test
   deploy:
     jobs:
-      - deploy:
-          requires:
-            hold
+      - deploy

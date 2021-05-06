@@ -9,14 +9,11 @@ jobs:
       - run:
           command: |
             sudo pip install -U pip
-            sudo pip install pytest coverage coverage-badge
+            sudo pip install pytest coverage
             coverage run --source=pyconfiger -m pytest
             coverage html
-            coverage-badge -o coverage-badge.svg
       - store_artifacts:
           path: htmlcov
-      - store_artifacts:
-          path: coverage-badge.svg
   deploy:
     docker:
       - image: circleci/python:3.9

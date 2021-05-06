@@ -1,0 +1,20 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/python3.9
+    steps:
+      - checkout
+      - run:
+          name: init .pypirc
+          command: |
+            echo -e "[pypi]" >> ~/.pypirc
+            echo -e "  username = __token__" >> ~/.pypirc
+            echo -e "  password = $PYPI_PASSWORD" >> ~/.pypirc
+      - run:
+          command: |
+            sudo pip install pytest build twine
+            pytest
+            python -m build
+            twine upload dist/*

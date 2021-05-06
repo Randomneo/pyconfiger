@@ -8,8 +8,14 @@ jobs:
       - checkout
       - run:
           command: |
-            sudo pip install pytest
-            python -m pytest
+            sudo pip install pytest covegare coverage-badge
+            coverage run --source=pyconfiger -m pytest
+            coverage html
+            coverage-bage -o coverage-bage.svg
+      - store_artifacts:
+          path: htmlcov
+      - store_artifacts:
+          path: coverage-bage.svg
   deploy:
     docker:
       - image: circleci/python:3.9

@@ -1,3 +1,5 @@
+[![pyconfiger](https://circleci.com/gh/Randomneo/pyconfiger.svg?style=svg)](https://circleci.com/gh/Randomneo/pyconfiger)
+
 # Description
 
 A simple python module to handle your project settings. Currently this module will get all values from env code are runned in.

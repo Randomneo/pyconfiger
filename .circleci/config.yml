@@ -16,7 +16,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: init .pypirc
           command: |
             echo -e "[pypi]" >> ~/.pypirc
             echo -e "  username = __token__" >> ~/.pypirc

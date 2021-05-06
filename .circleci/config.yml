@@ -26,3 +26,13 @@ jobs:
             python -m pytest
             python -m build
             twine upload dist/*
+
+workflows:
+  test:
+    jobs:
+      - test
+  deploy:
+    jobs:
+      - deploy:
+          required:
+            hold

@@ -11,10 +11,7 @@ jobs:
             sudo pip install -U pip
             sudo pip install pytest coverage coveralls
             coverage run --source=pyconfiger -m pytest
-            coverage html
             COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN coveralls
-      - store_artifacts:
-          path: htmlcov
   deploy:
     docker:
       - image: circleci/python:3.9

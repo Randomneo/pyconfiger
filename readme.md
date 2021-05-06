@@ -2,6 +2,8 @@
 
 [![PyPI version](https://badge.fury.io/py/pyconfiger.svg)](https://badge.fury.io/py/pyconfiger)
 
+[![coverage](./coverage-badge.svg)](./coverage-badge.svg)
+
 
 # Description
 

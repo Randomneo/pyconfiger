@@ -4,8 +4,6 @@ jobs:
   test:
     docker:
       - image: circleci/python:3.9
-    environment:
-      COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN
     steps:
       - checkout
       - run:
@@ -14,7 +12,7 @@ jobs:
             sudo pip install pytest coverage coveralls
             coverage run --source=pyconfiger -m pytest
             coverage html
-            coveralls
+            COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN coveralls
       - store_artifacts:
           path: htmlcov
   deploy:
